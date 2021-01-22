@@ -27,6 +27,9 @@ public class DeclarationApp {
 		System.out.println(randomString);
 		randomString = "Voici le résultat d’un calcul :\n1+5=6";
 		System.out.println(randomString);
+		String gitString = "text Git";
+		System.out.println(gitString);
+		
 	}
 
 }
