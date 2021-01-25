@@ -19,10 +19,10 @@ public class InteractifTantQue {
 		Scanner sc = new Scanner(System.in);
 		int userNumber = 0;
 		while (userNumber < minValue || userNumber > maxValue) {
-			System.out.println("Veuillez saisir un nombre compris entre 1 et 10 :");
+			System.out.println("Veuillez saisir un nombre compris entre " + minValue + " et " + maxValue + " :");
 			userNumber = sc.nextInt();
 		}
-		sc.close();
+//		sc.close();
 		return userNumber;
 	}
 	
@@ -34,7 +34,7 @@ public class InteractifTantQue {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Veuillez saisir un nombre entier :");
 		int userNumber = sc.nextInt();
-		sc.close();
+//		sc.close();
 		return userNumber;
 	}
 
