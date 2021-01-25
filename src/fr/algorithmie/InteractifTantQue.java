@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class InteractifTantQue {
 
 	public static void main(String[] args) {
-		int userNumber = enterNumber(1, 10);
+		int userNumber = enterInteger(1, 10);
 		System.out.println("Votre nombre est : " + userNumber);
 	}
 
@@ -15,13 +15,25 @@ public class InteractifTantQue {
 	 * @param maxValue maximum value that the user is allowed to enter
 	 * @return integer enter by user
 	 */
-	protected static int enterNumber(int minValue, int maxValue) {
-		int userNumber = 0;
+	protected static int enterInteger(int minValue, int maxValue) {
 		Scanner sc = new Scanner(System.in);
+		int userNumber = 0;
 		while (userNumber < minValue || userNumber > maxValue) {
 			System.out.println("Veuillez saisir un nombre compris entre 1 et 10 :");
 			userNumber = sc.nextInt();
 		}
+		sc.close();
+		return userNumber;
+	}
+	
+	/**
+	 * 
+	 * @return integer enter by user
+	 */
+	protected static int enterInteger() {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Veuillez saisir un nombre entier :");
+		int userNumber = sc.nextInt();
 		sc.close();
 		return userNumber;
 	}
