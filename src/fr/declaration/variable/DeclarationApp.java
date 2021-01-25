@@ -29,6 +29,12 @@ public class DeclarationApp {
 		System.out.println(randomString);
 		String gitString = "text Git";
 		System.out.println(gitString);
+
+		int a = 0x53;
+		System.out.println(a);
+
+		System.out.println(5 + 5 + " Je suis un nombre : " + 5 + 5);
+		System.out.println((5 + 5) + " Je suis un nombre : " + (5 + 5));
 		
 	}
 
