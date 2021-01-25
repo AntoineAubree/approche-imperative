@@ -7,7 +7,7 @@ public class FirstLast {
 		boolean arrayOk = false;
 
 		// verify if array is ok
-		if (array.length > 0 && (array[0] ==  array[array.length - 1])) {
+		if (array.length > 0 && (array[0] == array[array.length - 1])) {
 			arrayOk = true;
 		}
 
