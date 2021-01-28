@@ -18,7 +18,6 @@ public class InteractifFibonnaci {
 		int fibonnaciValue = 0;
 		int fibonnaciValueStock = 0;
 		sc.close();
-
 		for (int i = 1; i < userNumber; i++) {
 			if (i == 1) {
 				fibonnaciValue = 1;
@@ -29,9 +28,6 @@ public class InteractifFibonnaci {
 				fibonnaciValueStock = fibonnaciValue;
 			}
 		}
-
 		System.out.println("Le nombre de Fibonnaci de rang N est : " + fibonnaciValue);
-
 	}
-
 }

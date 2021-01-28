@@ -15,7 +15,7 @@ public class InteractifTantQue {
 	 * @param maxValue maximum value that the user is allowed to enter
 	 * @return integer enter by user
 	 */
-	protected static int enterInteger(int minValue, int maxValue) {
+	public static int enterInteger(int minValue, int maxValue) {
 		Scanner sc = new Scanner(System.in);
 		int userNumber = 0;
 		while (userNumber < minValue || userNumber > maxValue) {
@@ -30,7 +30,7 @@ public class InteractifTantQue {
 	 * 
 	 * @return integer enter by user
 	 */
-	protected static int enterInteger() {
+	public static int enterInteger() {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Veuillez saisir un nombre entier :");
 		int userNumber = sc.nextInt();
