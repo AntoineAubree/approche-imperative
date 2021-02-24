@@ -15,14 +15,15 @@ public class InteractifPlusMoins {
 			userNumber = sc.nextInt();
 			compteur++;
 			if (userNumber == randomNumber) {
-				System.out.println("Félicitations, vous avez trouvé le nombre aléatoire qui est : " + randomNumber);
+				System.out.println("FÃ©licitations, vous avez trouvÃ© le nombre alÃ©atoire qui est : " + randomNumber);
 				System.out.println("Vous avez mis " + compteur + " tentatives.");
 			} else if (userNumber > randomNumber) {
-				System.out.println("Vous êtes au dessus du nombre aléatoire.");
+				System.out.println("Vous Ãªtes au dessus du nombre alÃ©atoire.");
 			} else {
-				System.out.println("Vous êtes au dessous du nombre aléatoire.");
+				System.out.println("Vous Ãªtes au dessous du nombre alÃ©atoire.");
 			}
 		} while (userNumber != randomNumber);
+		sc.close();
 	}
 
 }
